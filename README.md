@@ -9,7 +9,7 @@ python dualguide_fastqgz_to_counts.py 20200513_library_1_2_unbalanced.csv  align
 Here, fastq/UDP0007* and fastq/UDP0006* are fastq files (the script will automatically detect read 1 and read 2; you can add as many fastq files as you want); "alignments" is the output directory; 20200513_library_1_2_unbalanced.csv is the library file. The output counts file can then be input into MAGECK or analyzed directly.
 
 
-For alignment of data without UMI, use python dualguide_UMI_fastqgz_to_counts.py. Example command: 
+For libraries with UMI, demultiplexing on only the i5 index using the i7 index (IBC) as a read is performed as detailed: https://gist.github.com/sumeetg23/a064a36801d2763e94da2e191699fb9f. For alignment of data with UMI, use python dualguide_UMI_fastqgz_to_counts.py. Example command: 
 
 python dualguide_UMI_fastqgz_to_counts.py 20200513_library_1_2_unbalanced.csv \
   UMI_sequences_filtered.csv \
