@@ -181,7 +181,7 @@ if __name__ == '__main__':
     print('sgRNAs in library', len(guideTable))
     
     ##assigne umiTable
-    umiTable = pd.read_csv(args.UMI_Table, sep=',', header=0)[['oligo','UMI']]
+    umiTable = pd.read_csv(args.UMI_Table, sep=',', header=0)[['UMI']]
     
     
     
