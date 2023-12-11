@@ -30,11 +30,7 @@ The script will output two files of counts for each sample: *.all.aligned.counts
 
 *.AB.match.counts.txt contains the number of counts for sgRNA A - sgRNA B - IBC combinations aligned including only pairs denoted in the library table (excluding recombined pairs). The first column denotes the name of the name of the sgRNA A - sgRNA B - IBC combination where the names are separated by "++" delimiters. The second column denotes the number of reads aligning to this element.
 
-These output count files can be used to calculate the enrichment of each sgRNA between screen arms in python or MaGECK.
-
 These scripts will also output statistics detailing the (i) the number of reads that mapped to an sgRNA/IBC in the library by position and (ii) the number of reads with mapped sgRNAs that do not match the library and thus represent recombined reads to standard output. 
-
-
-
-
-
+___
+The outputs of this workflow are count files and these can be used to calculate the enrichment of each sgRNA and gene 
+between screen arms. ScreenPro2 is now available for this purpose: [ScreenPro2.rtfd.io](https://screenpro2.readthedocs.io/en/latest/) | [@ArcInstitute/ScreenPro2](https://github.com/ArcInstitute/ScreenPro2)
